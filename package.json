@@ -1,7 +1,7 @@
 {
-  "name": "@causaly/typescript-pkg-template",
+  "name": "@causaly/isnt",
   "version": "0.0.0",
-  "description": "Typescript package template",
+  "description": "Common typescript type guards against falsy values",
   "author": "Causaly Team <front-end@causaly.com>",
   "license": "MIT",
   "sideEffects": false,
