@@ -9,6 +9,10 @@
     "predicate"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/causaly/isnt.git"
+  },
   "author": {
     "name": "Causaly Team",
     "email": "front-end@causaly.com",
