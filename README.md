@@ -1,4 +1,4 @@
-# Isnt
+# @causaly/isnt
 
 A collection of common runtime predicates that TypeScript actually understands.
 
