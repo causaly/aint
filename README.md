@@ -1,6 +1,6 @@
 # Isnt
 
-A collection of common type-checks that TypeScript actually understands.
+A collection of common runtime predicates that TypeScript actually understands.
 
 ![Build Status](https://github.com/causaly/isnt/actions/workflows/ci.yml/badge.svg)
 
@@ -41,7 +41,7 @@ const arrayWithoutNull = array.filter(isNotNull); // ts infers Array<number>
 
 ## Motivation
 
-It's easy to perform a type-check using lodash or vanilla JavaScript, e.g.
+It's easy to perform a check using lodash or vanilla JavaScript, e.g.
 
 ```javascript
 const array = [1, 2, null].filter(Boolean);
@@ -49,13 +49,13 @@ const array = [1, 2, null].filter(Boolean);
 
 The example above will filter out the `null` value as expected (because `null` is considered to be faulty).
 
-However, TypeScript will NOT _infer_ the correct type [[playground link](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAhgJwXAnjAvDA2gRgDQwBMBYArgDbkC6AdAGYCW5UApggBQBCII5LcYAJQBuIA)]. It will _understand_ the type of array as `Array<null | number>` instead of `Array<null>`.
+However, TypeScript will NOT _infer_ the correct type [[playground link](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAhgJwXAnjAvDA2gRgDQwBMBYArgDbkC6AdAGYCW5UApggBQBCII5LcYAJQBuIA)]. It will _understand_ the type of array as being `Array<null | number>` instead of `Array<null>`.
 
-`@causaly/isnt` provides a simple API to test for the correct type, while making TypeScript _understand_.
+`@causaly/isnt` provides a simple API to test for predicates, while making TypeScript _understand_.
 
 ## Contribute
 
-Source code contributions are most welcome.
+Source code contributions are most welcome, as long as the linter is satisfied.
 
 #### We are hiring
 

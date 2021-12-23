@@ -1,9 +1,31 @@
 {
   "name": "@causaly/isnt",
-  "version": "0.0.0",
-  "description": "Common typescript type guards against falsy values",
-  "author": "Causaly Team <front-end@causaly.com>",
+  "version": "0.1.0",
+  "description": "A collection of common runtime predicates that TypeScript actually understands.",
+  "keywords": [
+    "typescript",
+    "isnt",
+    "typeguard",
+    "predicate"
+  ],
   "license": "MIT",
+  "author": {
+    "name": "Causaly Team",
+    "email": "front-end@causaly.com",
+    "url": "https://www.causaly.com"
+  },
+  "contributors": [
+    {
+      "name": "Dimitrios C. Michalakos",
+      "email": "dimitris@jmike.gr",
+      "url": "https://github.com/jmike"
+    },
+    {
+      "name": "Dimitrios Lytras",
+      "email": "dnlytras@gmail.com",
+      "url": "https://dnlytras.com"
+    }
+  ],
   "sideEffects": false,
   "types": "./build/index.d.ts",
   "main": "./build/node/cjs/index.js",
