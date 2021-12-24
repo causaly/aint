@@ -2,7 +2,7 @@
 
 A collection of common runtime predicates that TypeScript actually understands.
 
-[![Build Status](https://github.com/causaly/aint/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/causaly/aint/actions/workflows/ci.yml) [![npm version](https://badge.fury.io/js/@causaly%2Faint.svg)](https://www.npmjs.com/package/aint)
+[![Build Status](https://github.com/causaly/aint/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/causaly/aint/actions/workflows/ci.yml) [![npm version](https://badge.fury.io/js/aint.svg)](https://www.npmjs.com/package/aint)
 
 #### Features
 
