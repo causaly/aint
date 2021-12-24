@@ -1,8 +1,8 @@
-# @causaly/isnt
+# aint
 
 A collection of common runtime predicates that TypeScript actually understands.
 
-[![Build Status](https://github.com/causaly/isnt/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/causaly/isnt/actions/workflows/ci.yml) [![npm version](https://badge.fury.io/js/@causaly%2Fisnt.svg)](https://www.npmjs.com/package/@causaly/isnt)
+[![Build Status](https://github.com/causaly/aint/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/causaly/aint/actions/workflows/ci.yml) [![npm version](https://badge.fury.io/js/@causaly%2Faint.svg)](https://www.npmjs.com/package/aint)
 
 #### Features
 
@@ -13,7 +13,7 @@ A collection of common runtime predicates that TypeScript actually understands.
 ## Installation
 
 ```bash
-npm install @causaly/isnt
+npm install aint
 ```
 
 #### Requirements
@@ -23,7 +23,7 @@ npm install @causaly/isnt
 ## Quick start
 
 ```typescript
-import { isNotNull } from '@causaly/isnt';
+import { isNotNull } from 'aint';
 
 // given an array containing null and number values
 const array = [1, 2, null]; // ts infers Array<null | number>
@@ -51,7 +51,7 @@ The example above will filter out the `null` value as expected (because `null` i
 
 However, TypeScript will NOT _infer_ the correct type [[playground link](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAhgJwXAnjAvDA2gRgDQwBMBYArgDbkC6AdAGYCW5UApggBQBCII5LcYAJQBuIA)]. It will _understand_ the type of array as being `Array<null | number>` instead of `Array<null>`.
 
-`@causaly/isnt` provides a simple API to test for predicates, while making TypeScript _understand_.
+`aint` provides a simple API to test for predicates, while making TypeScript _understand_.
 
 ## Contribute
 

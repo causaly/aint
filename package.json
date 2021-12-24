@@ -1,17 +1,18 @@
 {
-  "name": "@causaly/isnt",
+  "name": "aint",
   "version": "0.1.1",
   "description": "A collection of common runtime predicates that TypeScript actually understands.",
   "keywords": [
     "typescript",
     "isnt",
+    "isnot",
     "typeguard",
     "predicate"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/causaly/isnt.git"
+    "url": "git://github.com/causaly/aint.git"
   },
   "author": {
     "name": "Causaly Team",
