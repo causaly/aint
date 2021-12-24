@@ -58,7 +58,7 @@
     "test": "jest --config ./config/jest.config.ts",
     "coverage": "jest --config ./config/jest.config.ts --coverage",
     "changeset": "changeset",
-    "prerelease": "yarn build && yarn test",
+    "prerelease": "yarn build",
     "release": "changeset publish"
   },
   "husky": {
