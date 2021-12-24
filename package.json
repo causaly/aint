@@ -31,7 +31,7 @@
     }
   ],
   "sideEffects": false,
-  "types": "./build/index.d.ts",
+  "types": "./build/types/index.d.ts",
   "main": "./build/node/cjs/index.js",
   "exports": {
     ".": {
