@@ -55,8 +55,8 @@
     "build": "rimraf build && concurrently \"tsc -p tsconfig.json\" \"yarn build:node-cjs\" \"yarn build:node-esm\" \"yarn build:browser-esm\"",
     "lint": "eslint lib --ext .ts",
     "format": "prettier --config ./.prettierrc --ignore-path .gitignore -w .",
-    "test": "jest --config jest.config.ts",
-    "coverage": "jest --config jest.config.ts --coverage",
+    "test": "jest --config ./config/jest.config.ts",
+    "coverage": "jest --config ./config/jest.config.ts --coverage",
     "changeset": "changeset",
     "prerelease": "yarn build && yarn test",
     "release": "changeset publish"
