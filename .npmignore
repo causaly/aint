@@ -3,6 +3,7 @@
 .eslintignore
 .eslintrc
 .gitignore
+.npmrc
 .nvmrc
 .prettierrc
 tsconfig.json
