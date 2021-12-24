@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -27,5 +30,3 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: yarn release
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -7,8 +7,8 @@ on:
     branches:
       - main
 
-# env:
-#   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   block-autosquash:
