@@ -2,7 +2,7 @@
 
 A collection of common runtime predicates that TypeScript actually understands.
 
-![Build Status](https://github.com/causaly/isnt/actions/workflows/ci.yml/badge.svg?branch=main)
+[![Build Status](https://github.com/causaly/isnt/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/causaly/isnt/actions/workflows/ci.yml) [![npm version](https://badge.fury.io/js/@causaly%2Fisnt.svg)](https://www.npmjs.com/package/@causaly/isnt)
 
 #### Features
 
