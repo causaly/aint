@@ -1,5 +1,11 @@
 # aint
 
+## 0.3.0
+
+### Minor Changes
+
+- 81d8df5: Export NonEmptyArray generic type
+
 ## 0.2.0
 
 ### Minor Changes
