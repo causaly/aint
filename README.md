@@ -35,9 +35,9 @@ const arrayWithoutNull = array.filter(isNotNull); // ts infers Array<number>
 ## API
 
 - [isNotEmptyArray](./lib/isNotEmptyArray.ts)
-- [isNotEmptyString](./lib/isNotEmptyArray.ts)
-- [isNotNull](./lib/isNotEmptyArray.ts)
-- [isNotUndefined](./lib/isNotEmptyArray.ts)
+- [isNotEmptyString](./lib/isNotEmptyString.ts)
+- [isNotNull](./lib/isNotNull.ts)
+- [isNotUndefined](./lib/isNotUndefined.ts)
 
 ## Motivation
 
@@ -49,7 +49,7 @@ const array = [1, 2, null].filter(Boolean);
 
 The example above will filter out the `null` value as expected (because `null` is considered to be faulty).
 
-However, TypeScript will NOT _infer_ the correct type [[playground link](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAhgJwXAnjAvDA2gRgDQwBMBYArgDbkC6AdAGYCW5UApggBQBCII5LcYAJQBuIA)]. It will _understand_ the type of array as being `Array<null | number>` instead of `Array<null>`.
+However, TypeScript will NOT _infer_ the correct type [[playground link](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAhgJwXAnjAvDA2gRgDQwBMBYArgDbkC6AdAGYCW5UApggBQBCII5LcYAJQBuIA)]. It will _understand_ the type of array as being `Array<null | number>` instead of `Array<number>`.
 
 `aint` provides a simple API to test for predicates, while making TypeScript _understand_.
 
