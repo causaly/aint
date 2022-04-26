@@ -1,5 +1,11 @@
 # aint
 
+## 0.3.1
+
+### Patch Changes
+
+- 7562be4: Fix typos in README.md
+
 ## 0.3.0
 
 ### Minor Changes
