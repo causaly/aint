@@ -4,7 +4,7 @@ const config: Config.InitialOptions = {
   rootDir: '..',
   testEnvironment: 'node',
   collectCoverageFrom: ['lib/**/*.{js,ts}'],
-  testRegex: './lib/.*\\.(test|spec)?\\.(ts|ts)$',
+  testRegex: './lib/.*\\.(test|spec)\\.(js|ts)$',
   verbose: true,
   globals: {
     'ts-jest': {
