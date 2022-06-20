@@ -1,5 +1,11 @@
 # aint
 
+## 0.4.0
+
+### Minor Changes
+
+- 2751cb3: Introduce isNotNullish method to check both for null and undefined
+
 ## 0.3.1
 
 ### Patch Changes
