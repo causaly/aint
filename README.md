@@ -38,6 +38,7 @@ const arrayWithoutNull = array.filter(isNotNull); // ts infers Array<number>
 - [isNotEmptyString](./lib/isNotEmptyString.ts)
 - [isNotNull](./lib/isNotNull.ts)
 - [isNotUndefined](./lib/isNotUndefined.ts)
+- [isNotNullish](./lib/isNotNullish.ts)
 
 ## Motivation
 
