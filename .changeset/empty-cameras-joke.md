@@ -2,4 +2,4 @@
 'aint': minor
 ---
 
-Export NotNullish type
+Export NonNullish type
