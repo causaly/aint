@@ -1,5 +1,12 @@
 # aint
 
+## 0.5.0
+
+### Minor Changes
+
+- 8d3de1f: Export NonNullish type
+- a335dbc: Export `NonEmptyArray` type from a single statement
+
 ## 0.4.0
 
 ### Minor Changes
