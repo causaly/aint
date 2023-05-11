@@ -4,5 +4,4 @@ export { type NonNullish, isNotNullish } from './isNotNullish';
 
 export { isNotEmptyString } from './isNotEmptyString';
 
-export { isNotEmptyArray } from './isNotEmptyArray';
-export type { NonEmptyArray } from './isNotEmptyArray';
+export { type NonEmptyArray, isNotEmptyArray } from './isNotEmptyArray';
