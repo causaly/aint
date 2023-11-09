@@ -1,5 +1,11 @@
 # aint
 
+## 0.5.1
+
+### Patch Changes
+
+- 9bf7901: chore: bump babel/traverse version
+
 ## 0.5.0
 
 ### Minor Changes
