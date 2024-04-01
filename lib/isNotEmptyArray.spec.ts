@@ -1,4 +1,4 @@
-import { isNotEmptyArray } from './isNotEmptyArray';
+import { isNotEmptyArray } from './isNotEmptyArray.js';
 
 describe('isNotEmptyArray', () => {
   test('`[]` returns false', () => {

@@ -1,4 +1,4 @@
-import { isNotEmptyString } from './isNotEmptyString';
+import { isNotEmptyString } from './isNotEmptyString.js';
 
 describe('isNotEmptyString', () => {
   test("`''` returns false", () => {

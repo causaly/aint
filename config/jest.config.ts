@@ -14,6 +14,9 @@ const config: Config.InitialOptions = {
   transform: {
     '^.+\\.ts?$': 'ts-jest',
   },
+  moduleNameMapper: {
+    '(.+)\\.js': '$1',
+  },
 };
 
 export default config;

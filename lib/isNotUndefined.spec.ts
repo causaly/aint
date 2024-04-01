@@ -1,4 +1,4 @@
-import { isNotUndefined } from './isNotUndefined';
+import { isNotUndefined } from './isNotUndefined.js';
 
 describe('isNotUndefined', () => {
   test('`undefined` returns false', () => {

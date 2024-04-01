@@ -5,14 +5,12 @@
     "lib": ["es2022"],
     "target": "es2022",
     "declaration": true,
-    "skipLibCheck": true,
-    "module": "node16",
-    "moduleResolution": "node16",
-    "outDir": "./build/esm",
+    "module": "commonjs",
+    "outDir": "./build/cjs",
     "sourceMap": true,
     "declarationMap": true,
     "composite": true,
     "rootDir": "./lib"
   },
-  "include": ["./lib/**/*.ts"]
+  "include": ["./lib/**/*"]
 }
