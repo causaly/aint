@@ -1,0 +1,1 @@
+{"version":3,"file":"isNotEmptyArray.d.ts","sourceRoot":"","sources":["../../lib/isNotEmptyArray.ts"],"names":[],"mappings":"AAAA,MAAM,MAAM,aAAa,CAAC,CAAC,IAAI,CAAC,CAAC,EAAE,GAAG,CAAC,EAAE,CAAC,CAAC;AAE3C,wBAAgB,eAAe,CAAC,CAAC,EAAE,KAAK,EAAE,CAAC,EAAE,GAAG,KAAK,IAAI,aAAa,CAAC,CAAC,CAAC,CAExE"}
