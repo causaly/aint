@@ -84,7 +84,16 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: '**/build'
-          key: ${{ runner.os }}-build-${{ github.sha }}
+          key: ${{ runner.os }}-build-${{ github.sha }}      
+
+      - name: Install dependencies
+        run: yarn --immutable
+
+      - name: Perform a yarn install
+        run: yarn install
+
+      - name: Build artifacts
+        run: yarn build
 
       - name: Run tests
         run: yarn test
