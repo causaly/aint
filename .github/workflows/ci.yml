@@ -50,8 +50,10 @@ jobs:
           key: ${{ runner.os }}-build-${{ github.sha }}
 
       - name: Install dependencies
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn --immutable
+
+      - name: Perform a yarn install
+        run: yarn install
 
       - name: Build artifacts
         run: yarn build
