@@ -100,5 +100,6 @@
   },
   "peerDependencies": {
     "@swc/helpers": "^0.3.2"
-  }
+  },
+  "packageManager": "yarn@4.3.1"
 }
