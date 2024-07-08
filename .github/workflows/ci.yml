@@ -38,13 +38,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         id: yarn-cache
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: '**/build'
           key: ${{ runner.os }}-build-${{ github.sha }}
@@ -72,13 +72,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         id: yarn-cache
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         with:
           path: '**/build'
           key: ${{ runner.os }}-build-${{ github.sha }}
