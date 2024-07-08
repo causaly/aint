@@ -10,23 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           # This makes action fetch all Git history so that Changesets can generate changelogs with the correct commits
           fetch-depth: 0
 
-      - name: Use Node.js 14.x
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use Node.js 20.x
         uses: actions/setup-node@v1
         with:
-          version: 14.x
+          version: 20.x
 
       - name: Install Dependencies
-        run: yarn
+        run: yarn --immutable
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Create Release Pull Request or Publish to npm
-        uses: changesets/action@v1
+        uses: changesets/action@master
         with:
           publish: yarn release
         env:

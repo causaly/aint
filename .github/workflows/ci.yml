@@ -27,15 +27,16 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [20.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Enable Corepack
         run: corepack enable
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
 
       - uses: actions/cache@v2
         id: yarn-cache
@@ -50,7 +51,7 @@ jobs:
 
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn --ignore-scripts --frozen-lockfile
+        run: yarn --immutable
 
       - name: Build artifacts
         run: yarn build
@@ -61,11 +62,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [20.x]
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v4
+      - name: Enable Corepack
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -79,6 +83,5 @@ jobs:
         with:
           path: '**/build'
           key: ${{ runner.os }}-build-${{ github.sha }}
-
       - name: Run tests
         run: yarn test
