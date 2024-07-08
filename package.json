@@ -79,6 +79,7 @@
     "@changesets/cli": "^2.18.1",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@jest/types": "^29.6.3",
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.121",
     "@types/jest": "^29.5.12",

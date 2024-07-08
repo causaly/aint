@@ -2275,6 +2275,7 @@ __metadata:
     "@changesets/cli": "npm:^2.18.1"
     "@commitlint/cli": "npm:^15.0.0"
     "@commitlint/config-conventional": "npm:^15.0.0"
+    "@jest/types": "npm:^29.6.3"
     "@swc/cli": "npm:^0.1.55"
     "@swc/core": "npm:^1.2.121"
     "@types/jest": "npm:^29.5.12"
