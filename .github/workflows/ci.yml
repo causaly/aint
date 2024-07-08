@@ -84,6 +84,11 @@ jobs:
         with:
           path: '**/build'
           key: ${{ runner.os }}-build-${{ github.sha }}
+
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn --immutable
+        
       - name: Build artefacts
         run: yarn build
 
