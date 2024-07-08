@@ -31,6 +31,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Enable Corepack
+        run: corepack enable
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
