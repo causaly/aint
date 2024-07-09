@@ -6388,9 +6388,9 @@ __metadata:
   linkType: hard
 
 "semver-regex@npm:^3.1.2":
-  version: 3.1.3
-  resolution: "semver-regex@npm:3.1.3"
-  checksum: 10c0/8008572bc283bdeda0f6e840d098b6594763821ba5ac0dccd72a619ef3043680b55927acee9070d3d6a77df3ec28366be694284ff58357ad46375ce3a68f8815
+  version: 3.1.4
+  resolution: "semver-regex@npm:3.1.4"
+  checksum: 10c0/17bb7742b280e113c7850ce40b274341c74f61077a0712babd84782ea11b5bc343cde5b4e6d06721b29a2a4a17a42c5b8d1559efd9fd3de799997e83d361162c
   languageName: node
   linkType: hard
 
