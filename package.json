@@ -47,7 +47,7 @@
     "build"
   ],
   "engines": {
-    "node": "^14.17 || >=16.0.0"
+    "node": ">=20.0.0"
   },
   "scripts": {
     "build:node-cjs": "swc lib --config-file ./config/swc.node.cjs.json -d build/node/cjs",
@@ -79,6 +79,7 @@
     "@changesets/cli": "^2.18.1",
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
+    "@jest/types": "^29.6.3",
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.121",
     "@types/jest": "^27.0.3",
@@ -101,5 +102,6 @@
   },
   "peerDependencies": {
     "@swc/helpers": "^0.3.2"
-  }
+  },
+  "packageManager": "yarn@4.3.1"
 }
