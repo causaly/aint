@@ -29,6 +29,22 @@
       "name": "Dimitrios Lytras",
       "email": "dnlytras@gmail.com",
       "url": "https://dnlytras.com"
+    },
+    {
+      "name": "Konstantinos Liberopoulos",
+      "email": "libekonst@gmail.com"
+    },
+    {
+      "name": "Mark Goodwin",
+      "email": "mark@computerist.org"
+    },
+    {
+      "name": "Nikos Kalogridis",
+      "email": "nikos.kalogridis@gmail.com"
+    },
+    {
+      "name": "Stavros Tsourlidakis",
+      "email": "s.tsourlidakis@hotmail.com"
     }
   ],
   "sideEffects": false,
