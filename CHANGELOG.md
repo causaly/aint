@@ -1,5 +1,12 @@
 # aint
 
+## 0.6.0
+
+### Minor Changes
+
+- 84b936e: Many dependencies updated for security reasons, also yarn and node version updates
+- 7481dc4: Re-run release after yarn, node and security updates
+
 ## 0.5.1
 
 ### Patch Changes
