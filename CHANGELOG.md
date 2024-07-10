@@ -1,5 +1,11 @@
 # aint
 
+## 0.6.1
+
+### Patch Changes
+
+- 03d6694: Testing changesets and release following release issue resolution
+
 ## 0.6.0
 
 ### Minor Changes
