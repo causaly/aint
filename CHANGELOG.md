@@ -1,5 +1,11 @@
 # aint
 
+## 0.6.2
+
+### Patch Changes
+
+- 2cb5569: Test changeset release with new token
+
 ## 0.6.1
 
 ### Patch Changes
