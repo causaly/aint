@@ -63,19 +63,20 @@
     "build"
   ],
   "engines": {
-    "node": ">=20.0.0"
+    "node": "^20.13.0",
+    "npm": "^10.5.2"
   },
   "scripts": {
     "build:node-cjs": "swc lib --config-file ./config/swc.node.cjs.json -d build/node/cjs",
     "build:node-esm": "swc lib --config-file ./config/swc.node.esm.json -d build/node/esm",
     "build:browser-esm": "swc lib --config-file ./config/swc.browser.esm.json -d ./build/browser/esm",
-    "build": "rimraf build && concurrently \"tsc -p ./tsconfig.json\" \"yarn build:node-cjs\" \"yarn build:node-esm\" \"yarn build:browser-esm\"",
+    "build": "rimraf build && concurrently \"tsc -p ./tsconfig.json\" \"npm run build:node-cjs\" \"npm run build:node-esm\" \"npm run build:browser-esm\"",
     "lint": "eslint lib --ext .ts",
     "format": "prettier --config ./.prettierrc --ignore-path .gitignore -w .",
     "test": "jest --config ./config/jest.config.ts",
     "coverage": "jest --config ./config/jest.config.ts --coverage",
     "changeset": "changeset",
-    "prerelease": "yarn build",
+    "prerelease": "npm run build",
     "release": "changeset publish"
   },
   "husky": {
@@ -99,7 +100,7 @@
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.121",
     "@types/jest": "^29.5.12",
-    "@types/node": "^17.0.0",
+    "@types/node": "^20.17.0",
     "@typescript-eslint/eslint-plugin": "^5.7.0",
     "@typescript-eslint/parser": "^5.7.0",
     "concurrently": "^6.5.1",
@@ -118,6 +119,5 @@
   },
   "peerDependencies": {
     "@swc/helpers": "^0.3.2"
-  },
-  "packageManager": "yarn@4.3.1"
+  }
 }

@@ -13,7 +13,6 @@
       "dynamicImport": false,
       "decorators": false
     },
-    "target": "es2016",
     "loose": false,
     "externalHelpers": true
   },
