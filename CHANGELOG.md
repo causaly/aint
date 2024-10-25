@@ -1,5 +1,11 @@
 # aint
 
+## 0.6.3
+
+### Patch Changes
+
+- fdcc0a5: Migration of package management from yarn to npm - including updating some dependencies. No change to aint functionality.
+
 ## 0.6.2
 
 ### Patch Changes

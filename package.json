@@ -1,6 +1,6 @@
 {
   "name": "aint",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "A collection of common runtime predicates that TypeScript actually understands.",
   "keywords": [
     "typescript",
