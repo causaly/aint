@@ -36,13 +36,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
+          cache: 'npm'
 
       - uses: actions/cache@v4
-        id: yarn-cache
+        id: npm-cache
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
 
       - uses: actions/cache@v4
         with:
@@ -50,10 +50,10 @@ jobs:
           key: ${{ runner.os }}-build-${{ github.sha }}
 
       - name: Install dependencies
-        run: yarn --immutable
+        run: npm ci --ignore-scripts
 
       - name: Build artifacts
-        run: yarn build
+        run: npm run build
 
   test_unit:
     name: test:unit
@@ -70,13 +70,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
+          cache: 'npm'
 
       - uses: actions/cache@v4
-        id: yarn-cache
+        id: npm-cache
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
 
       - uses: actions/cache@v4
         with:
@@ -84,10 +84,10 @@ jobs:
           key: ${{ runner.os }}-build-${{ github.sha }}
 
       - name: Install
-        run: yarn --immutable
+        run: npm ci --ignore-scripts
 
       - name: Build artifacts
-        run: yarn build
+        run: npm run build
 
       - name: Run tests
-        run: yarn test
+        run: npm run test

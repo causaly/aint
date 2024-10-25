@@ -6,11 +6,6 @@
     "rootDir": "./lib",
     "esModuleInterop": true
   },
-  "include": [
-    "./lib/**/*"
-  ],
-  "exclude": [
-    "./lib/**/*.spec.ts",
-    "./lib/**/*.test.ts"
-  ]
+  "include": ["./lib/**/*"],
+  "exclude": ["./lib/**/*.spec.ts", "./lib/**/*.test.ts"]
 }
