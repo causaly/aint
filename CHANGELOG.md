@@ -1,5 +1,11 @@
 # aint
 
+## 0.7.0
+
+### Minor Changes
+
+- c23a82b: Export to esm/cjs without browser polyfills
+
 ## 0.6.3
 
 ### Patch Changes
