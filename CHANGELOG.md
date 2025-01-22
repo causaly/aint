@@ -1,5 +1,11 @@
 # aint
 
+## 0.7.1
+
+### Patch Changes
+
+- 24fb822: remove strict node version check - accept any version above v14
+
 ## 0.7.0
 
 ### Minor Changes
